@@ -1,0 +1,42 @@
+body {
+	background: linear-gradient(to left,#3f0202,#000041);
+}
+.toolbar {
+	padding: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	background: #272727;
+	text-shadow: 0 0 4px gray;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.question {
+	font-size: 25px;
+	text-shadow: none;
+}
+.content {
+	padding: 20px;
+	margin-top: 9%;
+}
+.btn {
+	margin: 5px;
+	font-family: "lalezar";
+}
+.icon {
+	width: 60px;
+	height:70px;
+}
+#link {
+	background-color: transparent;
+	color: transparent;
+	border: none;
+}
+@font-face {
+	font-family: "lalezar";
+	src: url("../assets/lalezar.ttf");
+}
+@media screen and (max-width: 600px) {
+	.content {
+		margin-top: 70%;
+	}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/bootstrap5.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="assets/sweetalert.min.js"></script>
+	<script src="js/index.js"></script>
+	<title>XOPlay</title>
+</head>
+<body>
+	<nav class="navbar text-white toolbar">
+		XO Play
+		<div onclick="goto('help.html');">
+			?
+		</div>
+	</nav>
+
+	<div class="row fixed-top text-white content justify-content-center">
+		<div class="col-5 btn btn-danger" onclick='goto("game.html");'>
+			<img src="assets/play.png" class="icon" /><br />
+			شروع بازی
+		</div>
+		<div class="col-5 btn btn-primary">
+			<img src="assets/about.png" class="icon" /><br />
+			درباره ما
+		</div>
+		<div class="col-5 btn btn-primary" onclick='goto("scores.html");'>
+			<img src="assets/charts.png" class="icon" /><br />
+			امتیازات
+		</div>
+		<div class="col-5 btn btn-danger">
+			<img src="assets/share.png" class="icon" onclick="share();" /><br />
+			اشتراک گذاری
+		</div>
+	</div>
+
+</body>
+</html>

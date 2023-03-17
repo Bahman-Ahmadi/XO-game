@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/bootstrap5.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/game.css">
+	<title>XOPlay</title>
+</head>
+<body onload="document.getElementById('xplayer').focus();">
+	<nav class="navbar fixed-top text-white toolbar">
+		<div onclick="goto('index.html');">
+			<span class="arrow-text">←</span>
+		</div>
+		وارد کردن اطلاعات بازی
+	</nav>
+	<div class="content row text-white justify-content-center" id="realbody">
+		<form class="details" method="POST" dir="rtl">
+			<div class="player">
+				<span class="label-one">نام بازیکن X : </span><input type="text" class="form-control text-danger" id="xplayer" />
+			</div>
+			<br />
+			<div class="player">
+				<span class="label-two">نام بازیکن O : </span><input type="text" class="form-control text-primary" id="oplayer" /><br /><br />
+			</div>
+
+			چه کسی بازی را شروع کند؟<br />
+			<input name="player" type="radio" id="first" checked /><span id="xshower">بازیکن اول</span><br />
+			<input name="player" type="radio" id="second" /><span id="oshower">بازیکن دوم</span><br /><br />
+
+			<input type="button" id="send" value="شروع بازی" />
+		</form>
+	</div>
+
+	<center>
+		<div id="alert" class="row alert">
+			<h3 class="col-12" id="atitle"></h3>
+			<span class="col-12" id="adescription"></span>
+			<center>
+				<div class="inline">
+					<button class="col-5 btn btn-outline-dark" id="btn1"></button>
+					<button class="col-5 btn btn-dark" id="btn2"></button>
+				</div>
+			</center>
+		</div>
+		<div id="BoxToastBox"></div>
+	</center>
+
+	<script src="js/game.js?12983"></script>
+</body>
+</html>

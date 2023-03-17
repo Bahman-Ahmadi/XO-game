@@ -1,0 +1,18 @@
+body {
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+.head {
+	text-shadow: 0 0 3px #000;
+	color: #f5f5f5;
+	padding: 10px;
+}
+table,tr , td {
+	width: fit-content;
+	height: fit-content;
+	font-size: 16px;
+}
+table {
+	width: 100%;
+}
